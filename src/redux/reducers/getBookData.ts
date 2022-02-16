@@ -1,3 +1,5 @@
+// Redux Toolkit allows us to write "mutating" logic in reducers.
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { booksData } from '../../data/books';
 
@@ -22,17 +24,16 @@ export const bookSlice = createSlice({
    initialState,
    reducers: {
       getBookData: (state, actions: PayloadAction<string | undefined>) => {
-         // Redux Toolkit allows us to write "mutating" logic in reducers. It
-         // doesn't actually mutate the state because it uses the Immer library,
-         // which detects changes to a "draft state" and produces a brand new
-         // immutable state based off those changes
+         //Filter out books that doesn't match to the select book based on it's id.
          const book: BookState = booksData.filter((book) => actions.payload == book.id)[0];
+
+         //Create a new state by mapping the filtered book properties and assigning it to the state properties.
          Object.keys(book).map((item) => (state[item as keyof BookState] = book[item as keyof BookState]));
       },
    },
 });
 
-// Action creators are generated for each case reducer function
+// Action creators are generated for each case reducer function.
 export const { getBookData } = bookSlice.actions;
 
 export default bookSlice.reducer;
