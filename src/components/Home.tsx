@@ -7,6 +7,7 @@ export default function Home() {
          <h1 className="headline_1">Read Something You Love</h1>
 
          <section id="books_collection">
+            {/* Map books data to create book cards node in the DOM. */}
             {booksData.map((book) => {
                const { id, title } = book;
 
