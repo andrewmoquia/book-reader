@@ -21,13 +21,14 @@ A demo web app for online book reading.
 ## Installation
 1. Clone the boilerplate repo
 `git clone https://github.com/andrewmoquia/book-reader.git`
-2. Install packages.
+2. Make sure to open the folder of `./book-reader` in your IDE like Visual Studio Code.
+3. Install packages.
 `npm install`
-3. Start dev.
+4. Start dev.
 `npm start`
-4. Build and bundling your resources for production.
+5. Build and bundling your resources for production.
 `npm run build`
-5. Build and test the build files.
+6. Build and test the build files.
 `npm run testbuild`
 
 ## Configuration
