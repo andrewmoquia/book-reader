@@ -27,6 +27,8 @@ A demo web app for online book reading.
 `npm start`
 4. Build and bundling your resources for production.
 `npm run build`
+5. Build and test the build files.
+`npm run testbuild`
 
 ## Configuration
 - `webpack/webpack.config.js` config to merge common webpack, dev or prod environments.
