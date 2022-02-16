@@ -1,0 +1,12 @@
+{
+   "name": "React Book Reader",
+   "short_name": "React Book Reader",
+   "start_url": "/",
+   "icons": [],
+   "theme_color": "#000000",
+   "background_color": "#FFFFFF",
+   "display": "standalone",
+   "orientation": "portrait",
+   "scope": ".",
+   "lang": "en-US"
+}
