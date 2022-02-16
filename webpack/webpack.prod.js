@@ -5,7 +5,7 @@ module.exports = {
    mode: 'production',
    target: target,
    plugins: [
-      CopyPlugin({
+      new CopyPlugin({
          patterns: [
             { from: './public/manifest.json', to: '' },
             { from: './public/robots.txt', to: '' },
