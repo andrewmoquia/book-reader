@@ -20,16 +20,26 @@ A demo web app for online book reading.
 
 ## Installation
 1. Clone the boilerplate repo
-`git clone https://github.com/andrewmoquia/book-reader.git`
+```
+git clone https://github.com/andrewmoquia/book-reader.git
+```
 2. Make sure to open the folder of `./book-reader` in your IDE like Visual Studio Code.
 3. Install packages.
-`npm install`
+```
+npm install
+```
 4. Start dev.
-`npm start`
+```
+npm start
+```
 5. Build and bundling your resources for production.
-`npm run build`
+```
+npm run build
+```
 6. Build and test the build files.
-`npm run testbuild`
+```
+npm run testbuild
+```
 
 ## Configuration
 - `webpack/webpack.config.js` config to merge common webpack, dev or prod environments.
